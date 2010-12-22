@@ -1,0 +1,8 @@
+mysql -u root -p
+
+CREATE DATABASE xxxxx;
+ 
+GRANT ALL PRIVILEGES ON xxxxxx.* TO "xxxxx"@"localhost" IDENTIFIED BY "xxxxxx";
+  
+FLUSH PRIVILEGES;
+

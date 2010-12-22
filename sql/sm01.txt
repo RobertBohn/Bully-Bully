@@ -1,0 +1,81 @@
+create table funds
+(
+   id        int not null primary key auto_increment,
+   name      varchar(100) not null 
+);
+
+create table stocks
+(
+   id        int not null primary key auto_increment,
+   symbol    varchar(10) not null,
+   company   varchar(150) not null,
+   enabled   char(1) not null,
+   process   date,
+   price     decimal(10,2),
+   low120    decimal(10,2),
+   high120   decimal(10,2),
+   day10     decimal(10,2)
+);
+
+create table settings
+(
+   id        int not null primary key auto_increment,
+   fund      int not null,
+   name      varchar(200) not null,
+   value     varchar(200)
+);
+
+create table fundstocks
+(
+   id        int not null primary key auto_increment,
+   fund      int not null,
+   stock     int not null
+);
+
+create table deposits
+(
+   id        int not null primary key auto_increment,
+   fund      int not null,
+   thedate   date not null,
+   amount    decimal(10,2) not null
+);
+
+create table prices
+(
+   stock     int not null,
+   thedate   date not null,
+   price     decimal(10,2) not null,
+   low120    decimal(10,2),
+   high120   decimal(10,2)
+);
+
+CREATE UNIQUE INDEX x_prices ON prices 
+( 
+    thedate, 
+    stock 
+);
+
+create table signals
+(
+   id        int not null primary key auto_increment,
+   stock     int not null,
+   thedate   date not null,
+   price     decimal(10,2) not null
+);
+
+create table trades
+(
+   id        int not null primary key auto_increment,
+   fund      int not null,
+   stock     int not null,
+   s1date    date not null,
+   s1price   decimal(10,2) not null,
+   s2date    date not null,
+   s2price   decimal(10,2) not null,
+   buydate   date not null,
+   buyprice  decimal(10,2) not null,
+   amount    decimal(10,2),
+   stop      decimal(10,2),
+   selldate  date,
+   sellprice decimal(10,2)
+);
