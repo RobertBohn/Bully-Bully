@@ -1,0 +1,66 @@
+﻿body { background-image: url(images/pattern.gif); margin:0; padding:15px 10px 10px 20px; font-family: arial, verdana, sans-serif; font-size:14px; }
+button { border:0; cursor:pointer; font-weight:bold; margin:0; padding:0; text-align:center; background:url(images/button-right.gif) right no-repeat; color:#fff; background-color:Transparent; }
+button span { position:relative; display:block; white-space:nowrap; padding:0 0 2px 10px; margin: 0 17px 0 0; height:30px; line-height:30px; background:url(images/button.gif) left no-repeat; color:#fff; background-color:Transparent; }
+
+#wrapper { color:#000; background:#dadada; width:740px; border:solid 1px #333333; }
+#header { width:700px; height:120px; background: url(images/tagline.gif) no-repeat 200px 10px; }
+#header img { margin: 5px 0px 0px 5px; border:0; }
+#tabholder { margin:0px 15px 15px 15px; }
+#opentab { color:inherit; clear:right; width:auto; background:#ffffff; border:solid 1px #999999; margin:0; padding:0; }
+#opentab { border-top:none; }
+#tabs { color:inherit; float:right; width:100%; background:#dadada url("images/gray-border.gif") repeat-x bottom; }
+#tabs ul { margin:0; padding:0 10px 0; list-style:none; }
+#tabs li { float:right; background:url("images/left.gif") no-repeat left top; margin:0; padding:0 0 0 9px; }
+#tabs a { float:left; display:block; background-color:inherit; background:url("images/right.gif") no-repeat right top; padding:5px 15px 4px 6px; text-decoration:none; font-weight:bold; color:#765; }
+        
+/* Commented Backslash Hack
+hides rule from IE5-Mac \*/
+#tabs a {float:none;}
+/* End IE5-Mac hack */
+        
+#tabs a:hover { background-color:inherit; color:#333; }
+#tabs #current { background-image:url("images/left_on.gif"); }
+#tabs #current a { background-color:inherit; background-image:url("images/right_on.gif"); color:#800080; padding-bottom:5px; }
+
+#menu { width:145px; }
+#menu ul { margin:0; padding:25px 30px 0 0; list-style:none; }
+#menu li { margin:0 0 15px 15px; padding:0; }
+#menu a { font-weight:bold; color:#765; background-color:inherit; margin-left:10px; }
+#menu a:hover { color:#333; background-color:inherit; }    
+#selected { background: url(images/selected.gif) no-repeat 0px 3px; }
+#menu #selected a { color:#800080; background-color:inherit; }
+        
+#pagename { text-decoration:none; font-weight:bold; color:#800080; background-color:inherit; font-size:24px; margin:20px 0 0 0; }
+#pagedescr { text-decoration:none; font-weight:bold; color:#800080; background-color:inherit; font-size:14px; margin:5px 0 0 0; }
+
+#content { border:solid 1px #dadada; min-height:250px; width:510px; margin:15px 0 0 0; padding:15px; }
+#content table { color:inherit; background:#dddddd; }
+#content th { font-family: arial, verdana, sans-serif; font-size:14px; color:#000000; background-color:#E7E4D8; font-weight:normal; }
+#content td { font-family: arial, verdana, sans-serif; font-size:14px; color:#000000; font-weight:normal; background-color:#ffffff; }
+#content td a { color:#0000ff; background-color:inherit; text-decoration:underline; }
+#content td a:hover { color:#000099; background-color:inherit; }
+#content td img { float:left; }
+
+#content .button { margin:0; padding:0; list-style:none; }
+#content .button li { float:left; background:url("images/button.gif") no-repeat left top; margin:0; padding:0; }
+#content .button a { float:left; display:block; background:url("images/button-right.gif") no-repeat right top; padding:3px 30px 4px 10px; text-decoration:none; font-weight:bold; color:#ffffff; background-color:Transparent; }
+#content .button a:hover { color:#ffffff; background-color:Transparent; }
+
+#content .backbutton { margin:0; padding:0; list-style:none; }
+#content .backbutton li { float:left; background:url("images/back-button.gif") no-repeat left top; margin:0; padding:0; }
+#content .backbutton a { float:left; display:block; background:url("images/back-button-right.gif") no-repeat right top; padding:3px 13px 4px 27px; text-decoration:none; font-weight:bold; color:#ffffff; background-color:Transparent; }
+#content .backbutton a:hover { color:#ffffff; background-color:Transparent; }
+
+#content .paging { margin-left:3px; margin-top:7px; font-size:12px; }
+#content .paging a { color:#0000ff; background-color:inherit; text-decoration:underline; }
+#content .paging a:hover { color:#000099; background-color:inherit; }
+
+#content .editinline { width:35px; text-align:right; }
+#content .yahoograph { margin-top:20px; }
+
+#content ul { margin:0 0 0 0; padding: 0 0 0 0; list-style:none; }
+#content li { margin:0 0 0 0; padding: 3px 0 3px 20px; }
+
+#footer { font-family: arial, verdana, sans-serif; text-align:center; margin:25px 0 15px 0; }
+#footer a { font-size:11px; color:#0000ff; background-color:inherit; text-decoration:underline; margin:0 3px 0 3px; }
+#footer a:hover { color:#000099; background-color:inherit; }

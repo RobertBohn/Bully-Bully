@@ -1,0 +1,14 @@
+﻿#homepage { margin-left:15px; padding-top:1px; height:366px; background:url("images/bully.gif") no-repeat 165px 65px; }
+#siteinfo { position:absolute; left:65px; top:320px; width:185px; }
+#stockinfo { position:absolute; left:515px; top:319px; width:193px; }
+
+#siteinfo h2 { text-decoration:none; font-weight:bold; color:#800080; background-color:inherit; font-size:14px; margin:10px 0 0 0; }
+#stockinfo h2 { text-decoration:none; font-weight:bold; color:#800080; background-color:inherit; font-size:14px; margin:10px 0 0 0; }
+
+#siteinfo p { margin:5px 0 0 0; }
+#stockinfo p { margin:5px 0 28px 0; }
+
+#homepage .button { margin:0; padding:0; list-style:none; }
+#homepage .button li { float:left; background:url("images/button.gif") no-repeat left top; margin:0; padding:0; }
+#homepage .button a { float:left; display:block; background:url("images/button-right.gif") no-repeat right top; padding:3px 30px 4px 10px; text-decoration:none; font-weight:bold; color:#ffffff; background-color:Transparent; }
+#homepage .button a:hover { color:#ffffff; background-color:Transparent; }
